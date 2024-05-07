@@ -1,0 +1,9 @@
+initial_dbt_project:
+  outputs:
+    dev:
+      type: duckdb
+      path: '../data/load1.db'
+    prod:
+      type: duckdb
+      path: '../data/prod.db'
+  target: dev
